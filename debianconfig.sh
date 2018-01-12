@@ -2,7 +2,8 @@
 #McStarky 2018
 
 #add repository for intel wifi drivers
-echo "deb http://httpredir.debian.org/ stretch main contrib non-free" >> /etc/apt/sources.list
+echo "# Debian 9 iwlwifi repo location"
+echo "deb http://httpredir.debian.org/debian/ stretch main contrib non-free" >> /etc/apt/sources.list
 
 #add firmware for drivers
 apt update && apt install firmware-iwlwifi pv sudo
