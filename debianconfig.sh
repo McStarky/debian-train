@@ -1,7 +1,8 @@
 #!/bin/bash
+#McStarky 2018
 
 #add repository for intel wifi drivers
-echo "deb http:/httpredir.debian.org/ stretch main contrib non-free" >> /etc/apt/sources.list
+echo "deb http://httpredir.debian.org/ stretch main contrib non-free" >> /etc/apt/sources.list
 
 #add firmware for drivers
 apt update && apt install firmware-iwlwifi pv sudo
@@ -16,4 +17,3 @@ killall -HUP gnome-shell
 
 #need to restart gnome, add code here
 #reboot
-
