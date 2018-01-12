@@ -12,6 +12,8 @@ apt update && apt install firmware-iwlwifi pv sudo
 modprobe -r iwlwifi ; modprobe iwlwifi
 
 apt upgrade -y
+#Proper colors ya boi
+setterm -term linux -back black -fore green
 
 #this restarts the visual GUI, allowing wireless to appear in the option menu
 killall -HUP gnome-shell
